@@ -1,0 +1,35 @@
+VERDULERÍA BLUNNO · VERSIÓN 3
+================================
+
+ARCHIVOS
+- index.html: página principal.
+- styles.css: diseño visual y adaptación a celular/PC.
+- app.js: cálculos, catálogo, compras, proveedores, promociones y PDF.
+
+CÓMO ABRIR
+1. Descomprimí Verduleria_Blunno_v3.zip en una carpeta.
+2. Abrí index.html con Chrome o Edge.
+3. La aplicación funciona sin instalar programas ni depender de internet.
+
+QUÉ INCLUYE
+- Productos y precios: frutas, verduras, condimentos y Pollería.
+- Leña y carbón: sección independiente.
+- Promociones por cantidad: por ejemplo, llevar 2 kg por un precio total de oferta. El ahorro se compara con el precio habitual del producto.
+- Compras a proveedores: detalle de producto, cantidad, unidad editable y costo por kg, bolsón, cajón, unidad, etc. El costo sugerido solo se reutiliza si coincide la unidad; al cambiar de kg a bolsón, se limpia para evitar errores.
+- Historial de compras editable y resumen de gastos por proveedor.
+- Responsables: Luz, Flor, Agus y Nico, con opción de agregar, modificar y eliminar.
+- Exportación PDF de productos, leña y carbón, promociones, compras y gastos por proveedor.
+- Respaldo y restauración de todos los datos en JSON.
+
+DATOS Y MEMORIA
+Los datos se guardan automáticamente en el almacenamiento del navegador de esa computadora y perfil. La agenda de proveedores conserva los nombres y los informes calculan el gasto a partir de las compras guardadas. Los filtros permiten consultar el período elegido. La fecha del encabezado y el estado de las promociones se actualizan al cambiar el día, incluso si la página queda abierta.
+
+IMPORTANTE: esta edición es local. No sincroniza automáticamente los datos entre una computadora y un celular. Para trabajar con la misma información en varios dispositivos hace falta conectar una base de datos compartida y configurar acceso seguro.
+
+MIGRACIÓN DESDE V1/V2
+La estructura mantiene la misma clave local de almacenamiento para intentar conservar los datos existentes en el mismo navegador. Si abrís la nueva carpeta en otra ubicación o cambiás de computadora, descargá primero un respaldo JSON desde la versión anterior y restauralo en esta versión. Las compras antiguas que no tenían proveedor quedan marcadas como “Sin proveedor cargado”; podés editarlas y asignarles el proveedor correcto. Las promociones anteriores se conservan como una oferta de una unidad.
+
+Los productos nuevos de Pollería se agregan al catálogo sin duplicar los que ya existan. Los costos se dejan vacíos cuando no hay un dato confirmado: no se precargan precios inventados.
+
+RECOMENDACIÓN
+Descargá un respaldo JSON al terminar cada jornada importante y guardalo en otra carpeta o en una unidad externa. No borres los datos del navegador sin antes exportar el respaldo.
