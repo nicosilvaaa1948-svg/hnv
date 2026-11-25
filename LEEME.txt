@@ -1,0 +1,25 @@
+VERDULERÍA BLUNNO · VERSIÓN 5
+================================
+
+CAMBIOS DE ESTA VERSIÓN
+- Compras simplificado: ahora solo se elige el proveedor, la fecha y el monto total. Se guarda un registro directo, sin cargar renglones ni cantidades.
+- Los proveedores se pueden agregar, modificar o quitar desde "Administrar proveedores". Al modificar un nombre, el historial asociado se actualiza; quitarlo de la agenda no borra los gastos anteriores.
+- El historial de gastos permite modificar y eliminar cada registro, y muestra el acumulado por proveedor.
+- Se agrega "PDF completo" en la parte superior: reúne precios de todos los rubros, promociones vigentes, gastos y resumen por proveedor en un único archivo.
+- Cada sección conserva su propio botón PDF: Productos y precios, Leña y carbón, Promociones y Compras. En Compras también se puede imprimir el resumen por proveedor.
+- Las listas de precios para el personal tienen el formato de la planilla de referencia: Producto | Precio oferta | Precio x kg / unidad. La columna de oferta queda en blanco para escribir el precio promocional a mano.
+- La última columna muestra el precio de venta calculado con el costo y el margen guardados para cada producto. Si falta el costo, se imprime "PRECIO PENDIENTE" en lugar de inventar un precio.
+- El PDF de Promociones muestra la cantidad, el precio promocional real, el precio normal y la ganancia estimada.
+
+USO
+1. Descomprimí el ZIP y abrí index.html con Chrome o Edge.
+2. En Productos y precios, cargá el costo y el porcentaje de ganancia de cada producto. El precio de venta se calcula automáticamente.
+3. Para imprimir una lista de trabajo, usá el botón PDF de cada sector o "PDF completo" para reunir todos los sectores en un solo archivo.
+4. En Compras, seleccioná o escribí el proveedor, ingresá fecha e importe total y guardá. El registro aparecerá en el historial y en el resumen del proveedor.
+5. Administrá proveedores desde el botón correspondiente. Podés agregar, renombrar o quitar proveedores sin borrar el historial de gastos.
+
+DATOS Y COMPATIBILIDAD
+- Se conserva la misma clave de almacenamiento local del navegador. Los datos V4 existentes se mantienen al abrir esta versión.
+- Las compras antiguas conservan su total y su detalle interno; las nuevas compras se registran como un gasto simple por proveedor.
+- Antes de reemplazar una versión anterior, descargá un respaldo JSON desde la sección de respaldo.
+- Los datos se guardan en el navegador de esa computadora. La página no sincroniza automáticamente entre distintos dispositivos.
